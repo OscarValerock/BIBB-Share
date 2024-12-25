@@ -16,9 +16,9 @@ Writing for BIBB offers you a unique opportunity to reach a dedicated and profes
 
 ### Promotion of Your Post
 
-- Your post will have a banner where you can promote your website, blog, or product. Only send us your picture, desired name, and brief text. You can link this banner to your desired professional website. See a sample [here](https://powerbithemegenerator.bibb.pro).
-- Your post will be promoted on the first line of selected blog posts on our most popular page.
-- Your post and bio will be promoted in our newsletter. See a sample [here](#).
+- Your post will have a banner where you can promote your website, blog, or product. Only send us your picture, desired name, and brief text. You can link this banner to your desired professional website. See a sample [here](https://www.bibb.pro/post/harnessing-ai-driven-data-storytelling-to-connect-and-inspire).
+- Your post will be promoted on the first line of selected blog posts on our most popular [page](https://powerbithemegenerator.bibb.pro).
+- Your post and bio will be promoted in our newsletter. See a sample [here](https://www.bibb.pro/post/ux-driven-bi-insights-newsletter-archive).
 - Your post and user will be promoted on our LinkedIn channels (15+ K followers).
 
 ## Topics
@@ -62,5 +62,7 @@ We are open to topics but are looking for those at the intersection between BI a
 By submitting your content to BIBB UX-driven BI, you grant BIBB a revocable, exclusive license to publish, promote, and distribute the content across our platforms. While you retain full ownership of your work, you agree not to republish or reuse the same content elsewhere to maintain its exclusivity on BIBB’s platforms.
 
 If at any point you wish to revoke the license, you may request the removal of your content from BIBB’s platforms. We are committed to accommodating such requests promptly while ensuring a smooth and professional process.
+
+Please note, however, that we reserve the right to remove any content submitted to our platform due to reasons including, but not limited to, copyright violations, outdated information, or other concerns. Rest assured, we will always clearly communicate the specific reason for such actions, ensuring transparency and professionalism in all our interactions.
 
 We envision not just a guest post but a partnership that sparks innovation, inspires our audience, and amplifies your influence in the BI and UX communities. We’re here to ensure that your insights reach the right ears in the most impactful way.
