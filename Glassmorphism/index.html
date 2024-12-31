@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Add some global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            margin: 0px;
+            flex-direction: column;
+        }
+
+        /* Style the footer */
+        #footer {
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+
+        /* Style the playground */
+        .playground {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin:0px;
+        }
+
+        /* Style the code block */
+        #code {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            /* Changed to black */
+            color: #f5f5f5;
+            /* Added light font color */
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding-bottom: 56.25%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background: url('https://img.freepik.com/free-vector/w-colours-pattern-design-template_23-2149844823.jpg');
+            background-size: cover;
+        }
+
+        .glassContainer {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .5);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            margin: 10px;
+        }
+
+        /* Style the inputs */
+        .slider {
+            margin: 0px 0;
+            padding: 0px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Style the label */
+        .label {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        /* Style the button */
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #copyButton:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="playground">
+        <div class="container" id="container">
+            <div class="glassContainer">
+                <div class="glass"></div>
+                <div class="glass"></div>
+                <div class="glass"></div>
+                <div class="glass"></div>
+                <div class="glass"></div>
+                <div class="glass"></div>
+            </div>
+        </div>
+        <input class="box" type="text" id="bgUrl" placeholder="Enter background image URL">
+        <label class="label" id="blurLabel">Blur (10px)</label>
+        <input class="slider" type="range" min="0" max="100" value="10" id="sliderBlur">
+        <label class="label" id="opacityLabel">Opacity (50%)</label>
+        <input class="slider" type="range" min="0" max="1" value="0.5" step="0.01" id="sliderOpacity">
+        <input type="color" id="colorInput" style="opacity: 0; position: absolute;">
+        <button id="colorPicker">SelectColor</button>
+        <div id="code"></div>
+        <button id="copyButton">Copy Code</button>
+        <span id="copyMessage"></span>
+        <div id="footer">Made with ❤️ by BIBB UX driven BI</div>
+    </div>
+
+
+
+    <script>
+
+// Get the elements
+const container = document.getElementById("container");
+const bgUrlInput = document.getElementById("bgUrl");
+const slider = document.getElementById("sliderBlur");
+const glasses = document.querySelectorAll(".glass");
+const code = document.getElementById("code");
+const sliderOpacity = document.getElementById("sliderOpacity");
+const colorInput = document.getElementById("colorInput");
+const colorPickerButton = document.getElementById("colorPicker");
+
+// Set a default background URL
+const defaultBgUrl = 'https://img.freepik.com/free-vector/w-colours-pattern-design-template_23-2149844823.jpg';
+
+// Set the background of the container to the default URL
+container.style.background = `url('${defaultBgUrl}')`;
+container.style.backgroundSize = 'cover';
+
+// When the input field changes, update the background URL
+bgUrlInput.onchange = () => {
+    const bgUrl = bgUrlInput.value;
+    container.style.background = `url('${bgUrl}')`;
+    container.style.backgroundSize = 'cover';
+}
+
+// Function to update the backdrop-filter, opacity, color and the code.textContent
+const updateStyle = (blurValue, opacityValue, rgbColor) => {
+    glasses.forEach(glass => {
+        glass.style.backdropFilter = `blur(${blurValue}px)`;
+        glass.style.backgroundColor = rgbColor ? `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, ${opacityValue})` : `rgba(255, 255, 255, ${opacityValue})`;
+    });
+    code.textContent = 
+    `Glassmorphism = 
+    "<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                body {
+                    background: ${rgbColor ? `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, ${opacityValue})` : `rgba(255, 255, 255, ${opacityValue})`};
+                    backdrop-filter: blur(${blurValue}px);
+                    } 
+            </style>
+        </head>
+        <body>
+        <` + `body>
+    </html>"`;
+}
+
+
+
+// Call the updateStyle function with initial values
+updateStyle(slider.value, sliderOpacity.value);
+
+let rgbColor = null; // Store the selected color
+
+// When the blur slider changes, update the blur, opacity and color
+slider.oninput = () => {
+    const blurValue = sliderBlur.value;
+    const blurText = `Blur (${blurValue} px)`;
+    blurLabel.textContent = blurText;
+    updateStyle(slider.value, sliderOpacity, rgbColor);
+    
+};
+
+// When the opacity slider changes, update the blur, opacity and color
+sliderOpacity.oninput = () => {
+    const opacityValue = sliderOpacity.value;
+    const opacityText = `Opacity (${Math.round(opacityValue * 100)}%)`;
+    opacityLabel.textContent = opacityText;
+    updateStyle(slider.value, opacityValue, rgbColor);
+};
+
+// When the color input changes, update the color
+colorInput.addEventListener('input', function() {
+    // Use the selected color
+    const hexColor = colorInput.value;
+    rgbColor = hexToRgb(hexColor);
+    updateStyle(slider.value, sliderOpacity.value, rgbColor);
+});
+
+//Color picker
+colorPickerButton.addEventListener('click', function() {
+    colorInput.click();
+});
+
+function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+// Add the click event listener to the button
+copyButton.addEventListener('click', () => {
+    // Copy the text
+    navigator.clipboard.writeText(code.textContent)
+    .then(() => {
+        // Change the button text
+        copyButton.textContent = 'Content copied to clipboard';
+
+        // Change the button text back after one second
+        setTimeout(() => {
+            copyButton.textContent = 'Copy Code';
+        }, 1000);
+    })
+    .catch(err => {
+        console.error('Could not copy text: ', err);
+    });
+});
+    </script>
+
+</body>
+
+</html>
