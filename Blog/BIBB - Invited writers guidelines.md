@@ -4,7 +4,7 @@ Thank you for being interested in contributing to BIBB UX-driven BI.
 
 We are at the forefront of passionately blending the art of User Experience (UX) with the science of Business Intelligence (BI). At BIBB, we believe in pushing the boundaries by offering insights, guidance, and tools to professionals and enthusiasts alike.
 
-We’ve been admirers of your work and unique perspectives. Your insights can transform concepts and inspire innovative ideas. That’s why we invite you to join forces and share your visionary insights with our vibrant community through a guest blog post.
+We believe that there are people in the community with insights who can transform concepts and inspire innovative ideas. We want to join forces with those people and share their vision with our vibrant community through a guest blog post.
 
 ## Why Write with BIBB?
 
