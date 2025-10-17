@@ -11,7 +11,7 @@ We believe that there are people in the community with insights who can transfor
 Writing for BIBB offers you a unique opportunity to reach a dedicated and professional audience deeply interested in the intersection of BI and UX. By contributing to our blog, you will:
 
 - **Amplify Your Reach**: With 15–20 thousand monthly views of our pages, you'll gain exposure to our extensive network.
-- **Collaborate Creatively**: Connect with our engaged readership through our newsletter, reaching over 6 thousand 100% GDPR-compliant subscribers.
+- **Collaborate Creatively**: Connect with our engaged readership through our newsletter, reaching over 15 thousand 100% GDPR-compliant subscribers.
 - **Grow Together**: Leverage our LinkedIn network of 15K+ followers to amplify your voice and expertise.
 
 ### Promotion of Your Post
