@@ -11,7 +11,7 @@ We believe that there are people in the community with insights who can transfor
 Writing for BIBB offers you a unique opportunity to reach a dedicated and professional audience deeply interested in the intersection of BI and UX. By contributing to our blog, you will:
 
 - **Amplify Your Reach**: With 15–20 thousand monthly views of our pages, you'll gain exposure to our extensive network.
-- **Collaborate Creatively**: Connect with our engaged readership through our newsletter, reaching over 6 thousand 100% GDPR-compliant subscribers.
+- **Collaborate Creatively**: Connect with our engaged readership through our newsletter, reaching over 15 thousand 100% GDPR-compliant subscribers.
 - **Grow Together**: Leverage our LinkedIn network of 15K+ followers to amplify your voice and expertise.
 
 ### Promotion of Your Post
@@ -48,7 +48,7 @@ We are open to topics but are looking for those at the intersection between BI a
 
 1. **Confirmation of interest**: Great! If you are reading this, it means your are interested in writing in our Blog.
 2. **Agree on the topic**: Tell us what you plan to write about to confirm it aligns with our blog. Drop us a quick mail with your blog post idea to [contact_bibb@bibb.pro](mailto:contact_bibb@bibb.pro), and we will get in touch with you.
-3. **Start writing**: We will grant you access to our content manager (WIX) to write your post. Please see the following [link](https://support.wix.com/en/article/wix-blog-moderating-blog-posts-from-your-guest-writers) on how the submission process in WIX works.
+3. **Start writing**: We love MD, but you are welcome to share the post in the format that you like the most.
 4. **Review Process**:
     - We will review your submission and suggest revisions. We reserve the right to edit the content for clarity, style, and alignment with our guidelines.
     - Grammar and spelling: We check with Grammarly and use British English.
@@ -64,6 +64,6 @@ By submitting your content to BIBB UX-driven BI, you grant BIBB a revocable, exc
 
 If at any point you wish to revoke the license, you may request the removal of your content from BIBB’s platforms. We are committed to accommodating such requests promptly while ensuring a smooth and professional process.
 
-Please note, however, that we reserve the right to remove any content submitted to our platform due to reasons including, but not limited to, copyright violations, outdated information, or other concerns. Rest assured, we will always clearly communicate the specific reason for such actions, ensuring transparency and professionalism in all our interactions.
+Please keep in mind, however, that we reserve the right to remove any content submitted to our platform for reasons including, but not limited to, copyright violations, outdated information, or other concerns. Rest assured, we will always clearly communicate the specific reason for such actions, ensuring transparency and professionalism in all our interactions.
 
-We envision not just a guest post but a partnership that sparks innovation, inspires our audience, and amplifies your influence in the BI and UX communities. We’re here to ensure that your insights reach the right ears in the most impactful way.
+We envision a partnership that goes beyond a guest post, sparking innovation, inspiring our audience, and amplifying your influence in the BI and UX communities. We’re here to ensure that your insights reach the right ears in the most impactful way.
